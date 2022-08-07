@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontpage.css">
+    <title>Contact Us</title>
+</head>
+<head>
+<title>contact us</title>
+</head>
+<body>
+ <div class="form">
+   <form name="form" onsubmit="validate()">
+   <p id="plabel"><b>Please use the form below to contact us</b></p>
+   <label for="name">Name:</label><br>
+   <input type="text" name="name" id="n" class="ch" size="95">
+   <br/> 
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="e" class="ch" size="95">
+     <br>
+    <p>Which package is your query about?</p>
+      <input type="radio" name="options" id="stand" > <label for="stand"> Standard</label><br>
+      <input type="radio" name="options" id="chosen"> <label for="chosen"> The Chosen One Package</label><br><br>
+      
+       <label for="scare">we may respond via owl, on a scale of 1-10, how scared are you of owl's?<br></label>
+      <label for="scare">(10 being the most scared)</label><br>
+      <input type="number" name="scare" id="scare" class="ch" ><br><br>
+     
+      <label for="q">Please enter you query:</label><br>
+      
+      <textarea name="query" id="q" class="ch" rows="10" cols="95"></textarea><br>
+      
+      <button name="submit" id="submit" >Submit</button>
+   </form>
+   <div class="msg" id="op">
+   <p id="l"> </p>
+   <button id="okay" onclick="myfunc()"  >Okay</button>
+  </div>
+</div>
+<script src="backend.js"></script>
+</body>
+</html>
